@@ -33,7 +33,7 @@
 
 
 <details>
-<summary>Database</summary>
+<summary>Ruby</summary>
   <ul>
     <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
   </ul>
@@ -79,7 +79,7 @@ Run this command:
 
 ```sh
   cd my-folder
-  git clone https://github.com/kamranasif506/Vet-Clinic.git
+  git clone https://github.com/Anand8317/decode-morse.git
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -109,6 +109,7 @@ Run this command:
 
 
 - [ ] Improve functionality
+- [ ] Add tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
