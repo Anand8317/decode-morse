@@ -9,19 +9,18 @@ def decode_char(code)
 end
 
 def decode_word(code)
-  res = code.split.map do | c |
-       decode_char(c)
+  res = code.split.map do |c|
+    decode_char(c)
   end
-  
+
   res.join
 end
 
 def decode_sentence(code)
-  res = code.split('   ').map { |word| decode_word(word)}
-  res = res.join(' ')
+  res = code.split('   ').map { |word| decode_word(word) }
+  res.join(' ')
 end
 
-result = decode_sentence(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+result = decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 
-
-puts "#{result}"
+puts result
