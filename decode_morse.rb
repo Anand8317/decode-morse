@@ -7,7 +7,14 @@ def decode_char(code)
   }
   decode[code]
 end
+def decode_word(code)
+  res = code.split.map do | c |
+       decode_char(c)
+  end
+  
+  res.join
+end
 
-result = decode_char('.---')
+result = decode_word("-- -.--")
 
 puts "#{result}"
