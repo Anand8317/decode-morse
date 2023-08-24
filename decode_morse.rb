@@ -7,6 +7,7 @@ def decode_char(code)
   }
   decode[code]
 end
+
 def decode_word(code)
   res = code.split.map do | c |
        decode_char(c)
@@ -15,6 +16,12 @@ def decode_word(code)
   res.join
 end
 
-result = decode_word("-- -.--")
+def decode_sentence(code)
+  res = code.split('   ').map { |word| decode_word(word)}
+  res = res.join(' ')
+end
+
+result = decode_sentence(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+
 
 puts "#{result}"
